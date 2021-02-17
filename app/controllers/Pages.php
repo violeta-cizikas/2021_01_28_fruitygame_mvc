@@ -50,6 +50,7 @@ class Pages extends Controller
 					// views'as nuluztu, jei data masyve nebutu user
 					'user' => $_SESSION['user'],
 				];
+
 				// tikrinama, kad suma butu ne maziau 50
 				if ($data['sum'] < 50) {
 					// zinutes pranesimas
@@ -93,7 +94,7 @@ class Pages extends Controller
 			} else {
 				$data = ['user' => $_SESSION['user']];
 			}
-			// jei vartotojas neprisijunges - nukreipiama i login
+		// jei vartotojas neprisijunges - nukreipiama i login
 		} else {
 			redirect('/users/login');
 			// grizta is f-jos ir si f-ja nebevyks toliau
@@ -123,6 +124,7 @@ class Pages extends Controller
 					// views'as nuluztu, jei data masyve nebutu user
 					'user' => $_SESSION['user'],
 				];
+				
 				// minimali statymo suma 5
 				if ($data['sum'] < 5) {
 					$data['sumErr'] = 'Sum must be 5 or more';

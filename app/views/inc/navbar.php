@@ -22,8 +22,8 @@
 		<div class="navbar-nav ml-auto">
 			<!-- rodomas skirtingas menu (pacioje pradzioje nebus my account ir play) -->           
 			<?php if (isset($_SESSION['user'])) :?>  
-			<a class="nav-link" href="<?php echo URLROOT ?>/pages/my_account">My account</a>
-			<a class="nav-link" href="<?php echo URLROOT ?>/pages/play">Play</a>
+				<a class="nav-link" href="<?php echo URLROOT ?>/pages/my_account">My account</a>
+				<a class="nav-link" href="<?php echo URLROOT ?>/pages/play">Play</a>
 			<?php endif; ?>
 		</div>
 		

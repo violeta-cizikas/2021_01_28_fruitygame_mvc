@@ -3,5 +3,5 @@
 
 function redirect($whereTo)
 {
-    header("Location: " . URLROOT . $whereTo);
+	header("Location: " . URLROOT . $whereTo);
 }
